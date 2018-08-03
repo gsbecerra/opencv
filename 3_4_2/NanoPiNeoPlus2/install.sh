@@ -18,15 +18,16 @@ echo "installing numpy.."
 sudo pip3 install numpy
 
 echo "downloading files..."
-wget https://github.com/gsbecerra/opencv/archive/v1.0.5.zip
-unzip v1.0.5.zip
-cd opencv-1.0.5/3_4_2/NanoPiNeoPlus2
+wget https://github.com/gsbecerra/opencv/archive/v1.0.6.zip
+unzip v1.0.6.zip
+cd opencv-1.0.6/3_4_2/NanoPiNeoPlus2
 sudo cp usr_local_bin/* /usr/local/bin/.
-sudo cp usr_local_include/* /usr/local/include/.
-sudo cp usr_local_lib/* /usr/local/lib/.
-sudo cp usr_local_lin_python3.5_dist-packages/* /usr/local/bin/python3.5/dist-packages/.
-sudo cp usr_local_share/* /usr/local/share/.
+sudo cp -r usr_local_include/* /usr/local/include/.
+sudo cp -r usr_local_lib/* /usr/local/lib/.
+sudo cp usr_local_lib_python3.5_dist-packages/* /usr/local/lib/python3.5/dist-packages/.
+sudo cp -r usr_local_share/* /usr/local/share/.
 echo "creating config file"
-cd /etc/ld.so.conf.d
 sudo echo "/usr/local/lib/" >> opencv.conf
+sudo cp opencv.conf /etc/ld.so.conf.d/.
 sudo ldconfig
+echo "opencv 3.4.2 installed and configured"
