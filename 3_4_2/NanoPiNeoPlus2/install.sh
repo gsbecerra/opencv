@@ -18,9 +18,9 @@ echo "installing numpy.."
 pip3 install numpy
 
 echo "downloading files..."
-wget https://github.com/gsbecerra/opencv/archive/v1.0.3.zip
-unzip v1.0.3.zip
-cd opencv-1.0.3/3_4_2/NanoPiNeoPlus2
+wget https://github.com/gsbecerra/opencv/archive/v1.0.4.zip
+unzip v1.0.4.zip
+cd opencv-1.0.4/3_4_2/NanoPiNeoPlus2
 cp usr_local_bin/* /usr/local/bin/.
 cp usr_local_include/* /usr/local/include/.
 cp usr_local_lib/* /usr/local/lib/.
