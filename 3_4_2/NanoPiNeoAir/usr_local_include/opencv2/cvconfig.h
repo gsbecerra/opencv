@@ -49,13 +49,13 @@
 /* C= */
 /* #undef HAVE_CSTRIPES */
 
-/* NVidia Cuda Basic Linear Algebra Subprograms (BLAS) API*/
+/* NVIDIA CUDA Basic Linear Algebra Subprograms (BLAS) API*/
 /* #undef HAVE_CUBLAS */
 
-/* NVidia Cuda Runtime API*/
+/* NVIDIA CUDA Runtime API*/
 /* #undef HAVE_CUDA */
 
-/* NVidia Cuda Fast Fourier Transform (FFT) API*/
+/* NVIDIA CUDA Fast Fourier Transform (FFT) API*/
 /* #undef HAVE_CUFFT */
 
 /* IEEE1394 capturing support */
@@ -103,7 +103,7 @@
 
 /* Intel Integrated Performance Primitives */
 /* #undef HAVE_IPP */
-/* #undef HAVE_IPP_ICV_ONLY */
+/* #undef HAVE_IPP_ICV */
 /* #undef HAVE_IPP_IW */
 
 /* Intel IPP Async */
@@ -127,10 +127,10 @@
 /* Microsoft Media Foundation Capture library */
 /* #undef HAVE_MSMF */
 
-/* NVidia Video Decoding API*/
+/* NVIDIA Video Decoding API*/
 /* #undef HAVE_NVCUVID */
 
-/* NVidia Video Encoding API*/
+/* NVIDIA Video Encoding API*/
 /* #undef HAVE_NVCUVENC */
 
 /* OpenCL Support */
@@ -154,7 +154,7 @@
 #define HAVE_PNG
 
 /* Posix threads (pthreads) */
-#define HAVE_PTHREADS
+#define HAVE_PTHREAD
 
 /* parallel_for with pthreads */
 #define HAVE_PTHREADS_PF
